@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/access/css/all.min.css"> 
+    <link rel="stylesheet" href="/Zeus/style.css">
+    <link rel="icons" href="/Godseye/favi.ico" type="image/F-icon"> 
+    <title>landing page</title>
+    <style>
+      body {
+    max-width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Adjust this value based on the width of your navbar */
+}
+#spec {
+    display: flex;
+    align-items: center;
+}
+#spec img{
+    float: left;
+    max-width: 80px;
+    margin-left: 40px;
+}
+#spec p{
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sort {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 10px;
+    color: black;
+    float: right;
+}
+.sort a {
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sort  a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(161, 128, 128);
+}
+#home {
+    text-align: center;
+}
+.group input, button {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 3vh;
+    margin: 0 auto;
+}
+.group button {
+    background-color: #f3e43e;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    width: 10%;
+    height: auto;
+    border: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.icon  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 8vw ;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ghost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ghost img {
+    max-width: 100px;
+    margin-left: 130px;
+}
+.ghost p {
+    font-size: 22px;
+    padding: 14px 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.crab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.crab img {
+    max-width: 100px;
+    margin-left: 160px;
+}
+.crab p {
+    font-size: 22px;
+    padding: 14px 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bat img {
+    max-width: 100px;
+    margin-left: 160px;
+}
+.bat p {
+    font-size: 22px;
+    padding: 14px 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column {
+    float:left;
+    width: 30.33%;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.column:first-child {
+     margin-left: 40px;
+}
+.column:last-child {
+    margin-right: 18px;
+}
+.column p, h3{
+    font-size: 20px;
+}
+#sake {
+    background-color: lightskyblue;
+    top: 0;
+    padding-top: 0;
+    font-size: 28px;
+    margin: 0;
+}
+#sage {
+    background-color: #f3e43e;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    max-width: 30%;
+    height: auto;
+    margin: 10px;
+    border: 2px solid white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.pricing::after {
+    content: "";
+    clear: both;
+    display:table-column;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        max-width: 100%;
+    }
+    
+}
+.footer {
+    position: relative;
+    right: 100px;
+    padding: 10px;
+    color: black;
+    float: right;
+    height: 9vh;
+    width: 80vw;
+    background-color: rgb(199, 199, 199);
+}
+.footer a {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    padding: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>
+    <div id="spec"><img src="data:image/png;base64,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" alt="a trombone">
+        <p>Orignal Trombones</p></div>
+    </h1>
+      <nav class="sort">
+          <a href="#Features">Features</a>
+          <a href="#How">How It Works</a>
+          <a href="#Pricing">Pricing</a>
+      </nav>
+      <h1 id="home">Handcrafted, Home-made Masterpieces</h1>
+    <div class="group">
+        <input type="email" placeholder="     Enter your email" required>
+        <br>
+        <button type="submit">Get Started</button>
+    </div>
+   
+  <div id="Features1" class="ghost">
+    <img src="data:image/png;base64,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" alt="a flame">
+    <p><b style="color: rgb(87, 17, 17); font-size: 26px;">Premium Materials:</b> Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+  </div>
+  <div id="Features2" class="crab">
+    <img src="data:image/png;base64,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" alt="a truck">
+    <p><b style="color: rgb(87, 17, 17); font-size: 26px;">Fast Shipping:</b> We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+  </div>
+  <div id="Features3" class="bat">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///8AAAD19fXX19cpKSkdHR1HR0fb29t8fHzf39+urq7Q0NDo6Og8PDzl5eXx8fFsbGwjIyO8vLyCgoIKCgpcXFxiYmJRUVErKyuLi4sTExN1dXW2trampqaUlJQxMTGdnZ3KyspDQ0M2NjYYvk/vAAAChUlEQVR4nO3d2VLCMBSA4RZkLxZQWQRU9P3f0e0iCV1pM83p4f/unOJM/mmBwDQhigAAAAAAAAAAAAAAAAAAAAAAAFpIk9mwTyZJOrgh7/K0fI57Z/0yf6zXd16HHmtz26S6b/MaepTtTKsu1rfQI2ztfVYauA09Ph8WJYGr0IPzo/gFp/+X6L+HtCBwEXpk3mwLCnehB+ZP/lNxE3pYHo1rncLX/UNf7DOTlGFOYOo+5GOWDvojTS7uCTrkFJ6cs3zLNFaIuXMB5jzgaB3fdT48H5xzlDNBtc9yzTm6NPaEJefVdG+OrrofnBcTq3CTPVx+tB+shlPp0bKpq2hL0zDPHrUKJ92PzY8xhfdbmLyN1yNxlsfMK2LTwnMs1cvV1Kth4UfnA6/v3UfhrPNh32LqoVD4dzfO/LNR4UD498Pn1oWyL9KrD4IqC50n4l0VHoYLY6Kx0LU+aS+M4yf1hT8fCa0/VBYe1ReO1BfGFEpFoUGhVBQaFEpFoUGhVBQaFEpFoUGhVBQaFEpFoUGhVBQaFEpFoUGhVBQaFEpFoUGhVBQaFEpFoUGhVBQa6gv139em/95E9feXar9HWON93s69+v9b1lj/paFQz3qL9mtm9K970r92Tfhl6mP9oeBFsp7WkF5tGiKKp3XAv2u5dxLXcq8u1w2sx6dQvtqF+vc2Ubo/jf49hvTvE2Xv9ZW/ZZ10VXt9OTOXz6LdIwWr3K9N/557mS851O2beAd7X+rfvzQahh6XN4Vv6Gr2ES7euVP4dzJ1lU1Y1O/nHUWH0MNr7atqytn394xpRd+v8yj0KJur89sIPwbaf9/ij/LfKAEAAAAAAAAAAAAAAAAAAAAAAKj2DQXabmvcq3M7AAAAAElFTkSuQmCC" alt="a battery">
+    <p><b style="color: rgb(87, 17, 17); font-size: 26px;">Quality Assurance:</b> For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+  </div>
+   <div id="How" class="video">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc?si=PG_JU23HZiAXkp91" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+  </div>
+    <br>
+   <div id="Pricing">
+   <div class="column">
+    <h2 id="sake">Tenor Trombone</h2>
+     <h3>$600</h3>
+      <p>Our Tenor Trombone is the perfect fit 
+        for anyone looking to start playing the 
+        trombone. It is made from the finest brass.</p>
+      <input id="sage" type="submit" value="Select">
+   </div>
+    <div class="column">
+      <h2 id="sake">Bass Trombone</h2>
+      <h3>$900</h3>
+        <p>Our Bass Trombone is the best in the business.
+           It is made from the highest quality brass and is
+            perfect for professional players.</p>
+        <input id="sage" type="submit" value="Select">
+    </div>
+    <div class="column">
+      <h2 id="sake">Valve Trombone</h2>
+      <h3>$1200</h3>
+        <p>Our Valve Trombone is the best you can get. It is made from the best brass and is perfect for professional players.</p>
+        <input id="sage" type="submit" value="Select">
+    </div>
+   </div>
+  </main>
+    <div class="footer">
+      <a href="#privacy">Privacy</a>
+      <a href="#Terms">Terms</a>
+      <a href="#contact">Contact</a>
+      <p><sup>&copy</sup> Copyright 2018, Original Trombones.</p>
+    </div>
+</body>
+</html>
